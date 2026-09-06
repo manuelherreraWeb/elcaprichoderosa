@@ -1,3 +1,12 @@
+import { Phone } from 'lucide-react'
+import { WhatsAppIcon } from './whatsapp-icon'
+import { InstagramIcon } from './instagram-icon'
+
+const CONTACT_PHONE = '675 561 710'
+const CONTACT_PHONE_TEL = '+34675561710'
+const WHATSAPP = '34675561710'
+const INSTAGRAM_URL = 'https://www.instagram.com/elcaprichoderosa'
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-background py-12">
@@ -11,6 +20,33 @@ export function SiteFooter() {
               Casa cueva de turismo rural en Anento, Zaragoza. Tu refugio de
               naturaleza, historia y descanso en el corazón de Aragón.
             </p>
+            <div className="mt-4 flex items-center gap-3">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de El Capricho de Rosa"
+                className="flex size-10 items-center justify-center rounded-full bg-secondary text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <InstagramIcon className="size-5" />
+              </a>
+              <a
+                href={`https://wa.me/${WHATSAPP}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp de El Capricho de Rosa"
+                className="flex size-10 items-center justify-center rounded-full bg-secondary text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <WhatsAppIcon className="size-5" />
+              </a>
+              <a
+                href={`tel:${CONTACT_PHONE_TEL}`}
+                aria-label="Llamar a El Capricho de Rosa"
+                className="flex size-10 items-center justify-center rounded-full bg-secondary text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <Phone className="size-5" />
+              </a>
+            </div>
           </div>
 
           <nav className="flex flex-col gap-2 text-sm">
@@ -21,6 +57,9 @@ export function SiteFooter() {
             <a href="#estancias" className="text-muted-foreground hover:text-primary">
               Estancias
             </a>
+            <a href="#jardin" className="text-muted-foreground hover:text-primary">
+              Jardín
+            </a>
             <a href="#entorno" className="text-muted-foreground hover:text-primary">
               El entorno
             </a>
@@ -30,13 +69,20 @@ export function SiteFooter() {
           </nav>
 
           <div className="text-sm">
-            <span className="font-semibold text-foreground">Ubicación</span>
+            <span className="font-semibold text-foreground">Contacto</span>
             <address className="mt-2 not-italic leading-relaxed text-muted-foreground">
-              Anento
+              Calle la Marina, 12
               <br />
-              50313 · Zaragoza, Aragón
+              50369 Anento · Zaragoza, Aragón
               <br />
               España
+              <br />
+              <a
+                href={`tel:${CONTACT_PHONE_TEL}`}
+                className="mt-2 inline-block hover:text-primary"
+              >
+                {CONTACT_PHONE}
+              </a>
             </address>
           </div>
         </div>

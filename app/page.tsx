@@ -2,6 +2,7 @@ import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
 import { LaCasa } from '@/components/la-casa'
 import { Estancias } from '@/components/estancias'
+import { Jardin } from '@/components/jardin'
 import { Entorno } from '@/components/entorno'
 import { Galeria } from '@/components/galeria'
 import { Ubicacion } from '@/components/ubicacion'
@@ -18,6 +19,7 @@ export default function Page() {
         <Hero />
         <LaCasa />
         <Estancias />
+        <Jardin />
         <Entorno />
         <Galeria />
         <Ubicacion />

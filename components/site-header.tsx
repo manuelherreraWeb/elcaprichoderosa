@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react'
 const links = [
   { href: '#la-casa', label: 'La casa' },
   { href: '#estancias', label: 'Estancias' },
+  { href: '#jardin', label: 'Jardín' },
   { href: '#entorno', label: 'El entorno' },
   { href: '#galeria', label: 'Galería' },
   { href: '#ubicacion', label: 'Cómo llegar' },

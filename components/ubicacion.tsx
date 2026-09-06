@@ -1,5 +1,5 @@
 import { SectionHeading } from './section-heading'
-import { Car, Clock, Mountain } from 'lucide-react'
+import { Car, Clock, Mountain, MapPin } from 'lucide-react'
 
 const distancias = [
   { icon: Car, title: 'Zaragoza', text: 'A ~1 h en coche por la A-23' },
@@ -13,9 +13,20 @@ export function Ubicacion() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           eyebrow="Cómo llegar"
-          title="En pleno corazón de Anento, Zaragoza"
-          description="La casa se encuentra en el municipio de Anento (provincia de Zaragoza, Aragón), bien comunicado y a un paso de los principales atractivos de la comarca del Campo de Daroca."
+          title="En pleno casco urbano de Anento, Zaragoza"
+          description="La casa se encuentra en Calle la Marina, 12 (50369 Anento, Zaragoza), en el casco urbano del pueblo, bien comunicado y a un paso de los principales atractivos de la comarca del Campo de Daroca."
         />
+
+        <div className="mt-6 flex justify-center">
+          <a
+            href="https://maps.app.goo.gl/Zm3RZC6EzrCV7Pab8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+          >
+            <MapPin className="size-4" /> Ver en Google Maps
+          </a>
+        </div>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2 lg:items-stretch">
           <div className="overflow-hidden rounded-2xl border border-border">
